@@ -1,0 +1,217 @@
+/* 🌱 SPRING - LIGHT */
+[data-theme="spring"] {
+  --background: 120 40% 95%;
+  --foreground: 120 20% 20%;
+  --primary: 120 60% 45%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 330 80% 80%;
+  --accent-foreground: 330 30% 20%;
+  --muted: 120 30% 85%;
+  --muted-foreground: 120 20% 30%;
+  --border: 120 30% 75%;
+  --input: 120 30% 90%;
+  --ring: 120 60% 50%;
+
+  --chart-1: 120 60% 45%;
+  --chart-2: 330 80% 70%;
+  --chart-3: 60 70% 60%;
+  --chart-4: 90 40% 50%;
+  --chart-5: 150 50% 55%;
+}
+
+/* 🌱 SPRING - DARK */
+[data-theme="spring"].dark {
+  --background: 120 20% 10%;
+  --foreground: 120 20% 90%;
+  --primary: 120 60% 45%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 330 60% 70%;
+  --accent-foreground: 330 30% 15%;
+  --muted: 120 20% 20%;
+  --muted-foreground: 120 20% 70%;
+  --border: 120 20% 25%;
+  --input: 120 20% 20%;
+  --ring: 120 60% 50%;
+
+  --chart-1: 120 60% 45%;
+  --chart-2: 330 80% 60%;
+  --chart-3: 60 60% 50%;
+  --chart-4: 90 40% 45%;
+  --chart-5: 150 50% 50%;
+}
+
+/* ☀️ SUMMER - LIGHT */
+[data-theme="summer"] {
+  --background: 50 100% 95%;
+  --foreground: 40 40% 20%;
+  --primary: 40 90% 50%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 200 100% 80%;
+  --accent-foreground: 200 40% 20%;
+  --muted: 40 60% 90%;
+  --muted-foreground: 40 40% 30%;
+  --border: 40 50% 80%;
+  --input: 40 50% 90%;
+  --ring: 40 90% 55%;
+
+  --chart-1: 40 90% 50%;
+  --chart-2: 200 100% 70%;
+  --chart-3: 340 70% 60%;
+  --chart-4: 60 80% 50%;
+  --chart-5: 10 90% 55%;
+}
+
+/* ☀️ SUMMER - DARK */
+[data-theme="summer"].dark {
+  --background: 40 40% 10%;
+  --foreground: 40 20% 90%;
+  --primary: 40 90% 50%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 200 100% 70%;
+  --accent-foreground: 200 40% 10%;
+  --muted: 40 30% 20%;
+  --muted-foreground: 40 20% 70%;
+  --border: 40 30% 30%;
+  --input: 40 30% 20%;
+  --ring: 40 90% 55%;
+
+  --chart-1: 40 90% 50%;
+  --chart-2: 200 100% 60%;
+  --chart-3: 340 60% 50%;
+  --chart-4: 60 80% 40%;
+  --chart-5: 10 90% 45%;
+}
+
+/* 🍂 AUTUMN - LIGHT */
+[data-theme="autumn"] {
+  --background: 30 50% 90%;
+  --foreground: 30 40% 15%;
+  --primary: 30 80% 50%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 10 60% 55%;
+  --accent-foreground: 0 0% 100%;
+  --muted: 30 30% 80%;
+  --muted-foreground: 30 30% 25%;
+  --border: 30 40% 70%;
+  --input: 30 30% 85%;
+  --ring: 30 80% 45%;
+
+  --chart-1: 30 80% 50%;
+  --chart-2: 10 60% 55%;
+  --chart-3: 40 70% 60%;
+  --chart-4: 20 50% 45%;
+  --chart-5: 0 70% 50%;
+}
+
+/* 🍂 AUTUMN - DARK */
+[data-theme="autumn"].dark {
+  --background: 30 30% 10%;
+  --foreground: 30 30% 90%;
+  --primary: 30 80% 50%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 10 60% 55%;
+  --accent-foreground: 10 30% 15%;
+  --muted: 30 20% 20%;
+  --muted-foreground: 30 20% 70%;
+  --border: 30 30% 25%;
+  --input: 30 20% 20%;
+  --ring: 30 80% 40%;
+
+  --chart-1: 30 80% 45%;
+  --chart-2: 10 60% 50%;
+  --chart-3: 40 70% 50%;
+  --chart-4: 20 50% 40%;
+  --chart-5: 0 70% 45%;
+}
+
+/* ❄️ WINTER - LIGHT */
+[data-theme="winter"] {
+  --background: 210 60% 98%;
+  --foreground: 220 20% 20%;
+  --primary: 220 60% 60%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 270 50% 80%;
+  --accent-foreground: 270 30% 20%;
+  --muted: 210 30% 90%;
+  --muted-foreground: 210 20% 30%;
+  --border: 210 30% 80%;
+  --input: 210 30% 95%;
+  --ring: 220 60% 50%;
+
+  --chart-1: 220 60% 60%;
+  --chart-2: 270 50% 70%;
+  --chart-3: 180 40% 60%;
+  --chart-4: 200 30% 50%;
+  --chart-5: 300 40% 60%;
+}
+
+/* ❄️ WINTER - DARK */
+[data-theme="winter"].dark {
+  --background: 220 30% 10%;
+  --foreground: 220 20% 90%;
+  --primary: 220 60% 60%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 270 50% 70%;
+  --accent-foreground: 270 30% 15%;
+  --muted: 210 20% 20%;
+  --muted-foreground: 210 20% 70%;
+  --border: 210 20% 30%;
+  --input: 210 20% 20%;
+  --ring: 220 60% 50%;
+
+  --chart-1: 220 60% 55%;
+  --chart-2: 270 50% 60%;
+  --chart-3: 180 40% 50%;
+  --chart-4: 200 30% 45%;
+  --chart-5: 300 40% 50%;
+}
+
+
+[data-theme="pink"] {
+  --background: 340 100% 98%;           /* hồng nhạt làm nền */
+  --foreground: 340 20% 20%;            /* chữ đậm hơn */
+
+  --primary: 340 100% 60%;              /* Bubblegum */
+  --primary-foreground: 340 100% 98%;
+
+  --accent: 340 100% 70%;               /* Cotton Candy */
+  --accent-foreground: 340 30% 20%;
+
+  --muted: 340 40% 90%;                 /* Hồng rất nhạt */
+  --muted-foreground: 340 30% 40%;
+
+  --border: 340 30% 80%;
+  --input: 340 30% 95%;
+  --ring: 340 60% 70%;
+
+  --chart-1: 340 100% 60%;
+  --chart-2: 340 80% 50%;
+  --chart-3: 340 60% 40%;
+  --chart-4: 340 40% 30%;
+  --chart-5: 340 30% 20%;
+}
+
+[data-theme="pink"].dark {
+  --background: 340 30% 10%;
+  --foreground: 340 20% 90%;
+
+  --primary: 340 100% 60%;             /* Bubblegum Pink */
+  --primary-foreground: 340 100% 95%;
+
+  --accent: 340 100% 70%;              /* Cotton Candy */
+  --accent-foreground: 340 100% 95%;
+
+  --muted: 340 20% 20%;
+  --muted-foreground: 340 20% 70%;
+
+  --border: 340 20% 30%;
+  --input: 340 20% 20%;
+  --ring: 340 60% 50%;
+
+  --chart-1: 340 100% 60%;             /* Biểu đồ màu hồng */
+  --chart-2: 340 80% 50%;
+  --chart-3: 340 60% 40%;
+  --chart-4: 340 40% 30%;
+  --chart-5: 340 30% 20%;
+}
+

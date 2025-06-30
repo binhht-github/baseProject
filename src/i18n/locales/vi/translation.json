@@ -1,0 +1,20 @@
+{
+  "user": {
+    "form": {
+      "title": "Quản lý người dùng",
+      "btnSaveCreate": "Tạo mới",
+      "btnSaveUpdate": "Lưu thay đổi"
+    },
+    "action": {
+      "create": "Thêm người dùng",
+      "view": "Xem",
+      "update": "Sửa",
+      "delete": "Xóa"
+    },
+    "table": {
+      "id": "ID",
+      "name": "Họ Tên ",
+      "email": "Email"
+    }
+  }
+}
