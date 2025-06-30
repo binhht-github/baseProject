@@ -5,7 +5,11 @@
       "name": "Hung Hoang 1132",
       "email": "hung@example.com",
       "role": "admin",
-      "permissions": ["user:create", "product:edit", "user:delete"],
+      "permissions": [
+        "user:create",
+        "product:edit",
+        "user:delete"
+      ],
       "updatedAt": "2025-06-30T08:57:21.658Z"
     },
     {
@@ -13,155 +17,225 @@
       "name": "Minh Nguyen",
       "email": "minh@example.com",
       "role": "staff",
-      "permissions": ["product:view"]
+      "permissions": [
+        "product:view"
+      ]
     },
-
     {
       "id": "1",
       "name": "Alice Tran",
       "email": "alice1@example.com",
       "role": "admin",
-      "permissions": ["user:create", "user:delete", "product:edit"]
+      "permissions": [
+        "user:create",
+        "user:delete",
+        "product:edit"
+      ]
     },
     {
       "id": "2",
       "name": "Bob Le",
       "email": "bob2@example.com",
       "role": "staff",
-      "permissions": ["product:view"]
+      "permissions": [
+        "product:view"
+      ]
     },
     {
       "id": "3",
       "name": "Charlie Nguyen",
       "email": "charlie3@example.com",
       "role": "manager",
-      "permissions": ["user:create", "product:view", "product:edit"]
+      "permissions": [
+        "user:create",
+        "product:view",
+        "product:edit"
+      ]
     },
     {
       "id": "4",
       "name": "Diem Huynh",
       "email": "diem4@example.com",
       "role": "staff",
-      "permissions": ["product:view"]
+      "permissions": [
+        "product:view"
+      ]
     },
     {
       "id": "5",
       "name": "Ethan Vo",
       "email": "ethan5@example.com",
       "role": "admin",
-      "permissions": ["user:create", "user:delete"]
+      "permissions": [
+        "user:create",
+        "user:delete"
+      ]
     },
     {
       "id": "6",
       "name": "Fiona Pham",
       "email": "fiona6@example.com",
       "role": "manager",
-      "permissions": ["product:view", "report:export"]
+      "permissions": [
+        "product:view",
+        "report:export"
+      ]
     },
     {
       "id": "7",
       "name": "George Bui",
       "email": "george7@example.com",
       "role": "staff",
-      "permissions": ["product:view"]
+      "permissions": [
+        "product:view"
+      ]
     },
     {
       "id": "8",
       "name": "Hanh Do",
       "email": "hanh8@example.com",
       "role": "staff",
-      "permissions": ["product:view"]
+      "permissions": [
+        "product:view"
+      ]
     },
     {
       "id": "9",
       "name": "Ivan Tran",
       "email": "ivan9@example.com",
       "role": "admin",
-      "permissions": ["user:create", "product:edit"]
+      "permissions": [
+        "user:create",
+        "product:edit"
+      ]
     },
     {
       "id": "10",
       "name": "Jade Le",
       "email": "jade10@example.com",
       "role": "manager",
-      "permissions": ["product:edit", "report:export"]
+      "permissions": [
+        "product:edit",
+        "report:export"
+      ]
     },
     {
       "id": "11",
       "name": "Khoa Nguyen",
       "email": "khoa11@example.com",
       "role": "staff",
-      "permissions": ["product:view"]
+      "permissions": [
+        "product:view"
+      ]
     },
     {
       "id": "12",
       "name": "Lan Pham",
       "email": "lan12@example.com",
       "role": "manager",
-      "permissions": ["user:create", "report:export"]
+      "permissions": [
+        "user:create",
+        "report:export"
+      ]
     },
     {
       "id": "13",
       "name": "Minh Chau",
       "email": "minh13@example.com",
       "role": "staff",
-      "permissions": ["product:view"]
+      "permissions": [
+        "product:view"
+      ]
     },
     {
       "id": "14",
       "name": "Nhi Hoang",
       "email": "nhi14@example.com",
       "role": "admin",
-      "permissions": ["user:delete", "report:export"]
+      "permissions": [
+        "user:delete",
+        "report:export"
+      ]
     },
     {
       "id": "15",
       "name": "Oscar Trinh",
       "email": "oscar15@example.com",
       "role": "manager",
-      "permissions": ["user:create", "product:view"]
+      "permissions": [
+        "user:create",
+        "product:view"
+      ]
     },
     {
       "id": "16",
       "name": "Phuong Ly",
       "email": "phuong16@example.com",
       "role": "staff",
-      "permissions": ["product:view"]
+      "permissions": [
+        "product:view"
+      ]
     },
     {
       "id": "17",
       "name": "Quynh Dang",
       "email": "quynh17@example.com",
       "role": "manager",
-      "permissions": ["product:view", "product:edit"]
+      "permissions": [
+        "product:view",
+        "product:edit"
+      ]
     },
     {
       "id": "18",
       "name": "Ricky Ho",
       "email": "ricky18@example.com",
       "role": "admin",
-      "permissions": ["user:create", "user:delete", "product:edit"]
+      "permissions": [
+        "user:create",
+        "user:delete",
+        "product:edit"
+      ]
     },
     {
       "id": "19",
       "name": "Sara Vo",
       "email": "sara19@example.com",
       "role": "staff",
-      "permissions": ["product:view"]
+      "permissions": [
+        "product:view"
+      ]
     },
     {
       "id": "20",
       "name": "Tuan Anh",
       "email": "tuan20@example.com",
       "role": "manager",
-      "permissions": ["product:view", "report:export"]
+      "permissions": [
+        "product:view",
+        "report:export"
+      ]
     },
     {
       "id": "21",
       "name": "Uyen Tran",
       "email": "uyen21@example.com",
       "role": "admin",
-      "permissions": ["user:create", "user:delete"]
+      "permissions": [
+        "user:create",
+        "user:delete"
+      ]
+    },
+    {
+      "name": "Minh hoang",
+      "email": "ee@example.com",
+      "role": "admin",
+      "permissions": [
+        "user:create"
+      ],
+      "id": "e6c6f5d2-a18b-45c3-af77-618dbabf6159",
+      "createdAt": "2025-06-30T10:10:09.894Z",
+      "updatedAt": "2025-06-30T10:10:19.545Z"
     }
   ]
 }
