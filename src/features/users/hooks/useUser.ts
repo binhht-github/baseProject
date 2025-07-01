@@ -6,7 +6,7 @@ import { createUser, deleteUser, getUsers, updateUser } from "../api/api";
 
 
 
-export const useQueryCustomers = (params: TPram = {}) => {
+export const useQueryUser = (params: TPram = {}) => {
     return useQuery<TResponse<User>, Error>({
         queryKey: ["users", params],
         queryFn: () => getUsers(params),
@@ -90,7 +90,7 @@ export const useDeleteUser = () => {
     const { toast } = useToast();
     const queryClient = useQueryClient();
 
-    return useMutation<void, Error, string>({
+    return useMutation<string, Error, string>({
         mutationFn: (id) => deleteUser(id),
 
         onError: () => {

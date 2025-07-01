@@ -15,12 +15,15 @@ import { Pagination } from '@/components/layout/Panigation';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
+import { ExportExcelButton } from '@/components/excel/ExportExcelBtn';
+import SearchInput from '@/components/ui/SearchInput';
+import { useDeleteUser } from '../hooks/useUser';
 
 interface Props {
     users: User[];
     onView: (user: User) => void;
     onEdit: (user: User) => void;
-    onDelete: (id: string) => void;
+    // onDelete: (id: string) => void;
     totalItems: number;
     totalPages: number;
     currentPage: number;
@@ -28,15 +31,33 @@ interface Props {
     setParam: React.Dispatch<React.SetStateAction<TPram>>
 }
 
-function UserTable({ users, onView, onDelete, onEdit, currentPage, totalItems, totalPages, params, setParam }: Props) {
+function UserTable({ users, onView, onEdit, currentPage, totalItems, totalPages, params, setParam }: Props) {
     const { t } = useTranslation();
     const [rowSelection, setRowSelection] = useState<RowSelectionState>({});
     const [sorting, setSorting] = useState<SortingState>([]);
 
+    const { mutate: deleteUser } = useDeleteUser();
+    const onDelete = (id: string) => {
+
+
+        if (confirm("Bạn có chắc chắn muốn xóa người dùng này không?")) {
+            deleteUser(id, {
+                onSuccess: (data) => {
+                    console.log("delete success fulluly ", data);
+                    if ((totalItems - 1) % params.limit! === 0) {
+                        table.setPageIndex(currentPage - 2)
+
+                    }
+
+                }
+            })
+        }
+    }
+
     const columns = userColumnDef({
         onView,
         onEdit,
-        onDelete,
+        onDelete
     });
 
     const setPaginationCustomer = (
@@ -76,13 +97,7 @@ function UserTable({ users, onView, onDelete, onEdit, currentPage, totalItems, t
         data: users,
         columns,
         getCoreRowModel: getCoreRowModel(),
-        getPaginationRowModel: getPaginationRowModel(),
-        getSortedRowModel: getSortedRowModel(),
-        onPaginationChange: setPaginationCustomer,
-        onSortingChange: setSorting,
-        onRowSelectionChange: setRowSelection,
-        manualPagination: true,
-        pageCount: totalPages ?? -1,
+
         state: {
             sorting,
             rowSelection,
@@ -91,13 +106,43 @@ function UserTable({ users, onView, onDelete, onEdit, currentPage, totalItems, t
                 pageSize: params.limit ?? 10,
             },
         },
+
+        pageCount: totalPages ?? -1,
+        manualPagination: true,
+        getPaginationRowModel: getPaginationRowModel(),
+        onPaginationChange: setPaginationCustomer,
+
+        onRowSelectionChange: setRowSelection,
+
         sortingFns: {
             customSortByLastName,
         },
+        onSortingChange: setSorting,
+        getSortedRowModel: getSortedRowModel(),
     });
+
+
+    const selectedData = table.getSelectedRowModel().rows.map(row => row.original);
+
+
+    const onChangeSearch = (value: string) => {
+        console.log("parent ", value);
+        setParam((prev) => ({
+            ...prev,
+            search: value
+        }))
+    }
 
     return (
         <div className="overflow-x-auto rounded-md border">
+            <div className=" w-full flex justify-end p-2">
+                <div className='flex-1 mx-2 px-2'>
+                    <SearchInput onChange={onChangeSearch} deBounce={500} className='rounded-xl' />
+                </div>
+                <div className='bg-primary p-1 border-border rounded-xl '>
+                    <ExportExcelButton data={selectedData} fileName="khach_hang.xlsx" />
+                </div>
+            </div>
             <table className="min-w-full border-collapse text-sm">
                 <thead className="bg-primary">
                     {table.getHeaderGroups().map((group) => (

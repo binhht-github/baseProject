@@ -3,6 +3,7 @@ import { ProtectedRoute } from "./lib/ProtectedRoute"
 import { NavigationMenuDemo } from "./components/layout/Navigation"
 import { lazy, Suspense } from "react"
 import { Toaster } from "sonner"
+import Loading from "./components/layout/Loading"
 // const HomePage = lazy(() => import('./pages/HomePage'));
 
 const LoginPage = lazy(() => import("./pages/LoginPage"))
@@ -13,9 +14,9 @@ const ReportPage = lazy(() => import("./pages/ReportPage"))
 
 function App() {
   return (
-    <div>
+    <div className="w-screen">
       <NavigationMenuDemo />
-      <Suspense fallback={<div className="p-4">Đang tải...</div>}>
+      <Suspense fallback={<div className="p-4 h-full w-full flex justify-center"><Loading /></div>}>
         <Routes>
           <Route
             path="/"
